@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MiSDK"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Mi SDK"
   s.description  = "Mi SDK Personal Use"
   s.requires_arc        = true
@@ -17,10 +17,7 @@ Pod::Spec.new do |s|
 
 
   s.source  = { :git => "https://github.com/lichang0716/MiSDK.git", :tag => s.version.to_s }
-
-  s.frameworks  = "Security", "SystemConfiguration", "CoreGraphics", "CoreTelephony"
-  s.libraries = "iconv", "sqlite3.0", "z", 'c++'
   s.ios.vendored_frameworks = "MiPassport.framework"
   s.resource = "*.{png,xib,nib,bundle}"
-  
+
 end
